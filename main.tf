@@ -1,5 +1,8 @@
 terraform {
   required_version = ">= 0.12"
+  required_providers {
+    aws = ">= 2.35.0"
+  }
 }
 
 resource aws_s3_bucket_policy force_encryption {
